@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive !important;
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    font-family: 'ADLaM Display', cursive;
+    background-color: #d8c4b6;
+}
+
+nav {
+    background-color: #4f709c;
+}
+
+footer {
+    background-color: #4f709c;
+    padding: 1rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "direccion direccion social . newsletter"
+    ;
+}
+
+.div-direccion {
+    grid-area: direccion;
+}
+
+.div-social {
+    grid-area: social;
+}
+
+.div-newsletter {
+    grid-area: newsletter;
+}
+
+.div-social-flex {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.div-social-flex a {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: #f5efe7;
+}
+
+footer h3 {
+    color: #f5efe7;
+}
+
+nav a {
+    color: #f5efe7;
+    text-decoration: none;
+    margin: .50rem;
+}
+
+.logo {
+    margin: .625rem;
+}
+
+.section-logo {
+    border-radius: 100%;
+    margin: 5rem;
+}
+
+.section-h1 {
+    margin: 2rem;
+}
+
+fieldset {
+    display: inline;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.section-filtros {
+    margin: 1rem;
+}
+
+.section-p {
+    margin: 1.25rem;
+}
+
+.section-input {
+    display: block;
+    margin-left: 2rem;
+}
+
+.section-label {
+    margin-left: 2rem   ;
+}
+
+#section-img {
+    width: 100%;
+}
+
+#section-img1 {
+    width: 100%;
+}
+
+#section-img2 {
+    width: 100%;
+}
+
+#section-img3 {
+    width: 100%;
+}
+
+button a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: #4f709c;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.div-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.25rem;
+    gap: .625rem;
+}
+
+.navbar li a img {
+    display: flex;
+    align-items: center;
+}
+
+
+.cards {
+    margin: 1rem;
+    width: 25rem;
+    padding: .625rem;
+    background-color: #f5efe7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cards div img {
+    width: 100%;
+}
+
+.section-img {
+    border-radius: 1.25rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10rem;
+}
+
+.div-p-flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-left: 1.25rem;
+}
+
+.container-cards2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "cards-grid5 cards-grid6 cards-grid7"
+    ;
+}
+
+.cards-grid5 {
+    grid-area: cards-grid5;
+}
+
+.cards-grid6 {
+    grid-area: cards-grid6;
+}
+
+.cards-grid7 {
+    grid-area: cards-grid7;
+}
+
+.div-grid {
+    margin-left: .9375rem;
+}
+
+.flex-principal {
+    display: flex;
+}
+
+
+.container-cards3 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container-cards4 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .container-cards3 {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 1.25rem;
+    }
+    .container-cards2 {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 1.25rem;
+    }
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+    }
+    .container-cards4 {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .cards {
+        width: 18rem;
+    }
+    footer {
+        grid-template-areas: 
+        "direccion direccion social newsletter newsletter"
+        ;
+    }
+    .div-newsletter {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-cards3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-cards2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .navbar a {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .container-cards3, .container-cards2, .container-cards, .container-cards {
+        grid-template-columns: 1fr;
+    }
+}
